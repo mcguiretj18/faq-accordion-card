@@ -1,4 +1,4 @@
-const h3Elements = document.querySelectorAll('h3');
+const h2Elements = document.querySelectorAll('h2');
 
 const clickHandler = (elements, index) => (event) => {
     const accordionNode = elements[index].parentElement.parentElement;
@@ -18,6 +18,6 @@ const clickHandler = (elements, index) => (event) => {
     }
 }
 
-h3Elements.forEach((element, index) => {
-    element.addEventListener('click', clickHandler(h3Elements, index));
+h2Elements.forEach((element, index) => {
+    element.addEventListener('click', clickHandler(h2Elements, index));
 })
