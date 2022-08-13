@@ -47,7 +47,6 @@ p {
     font-size: 12px;
     line-height: 18px;
     color: #787887;
-    margin-bottom: 12px;
 }
 
 .bold {
@@ -79,6 +78,7 @@ p {
 .show p {
     height: fit-content;
     opacity: 1;
+    margin-bottom: 12px;
 }
 
 .show h2 {
