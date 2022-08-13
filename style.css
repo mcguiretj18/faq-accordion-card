@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body, h1, h3, p {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    background-repeat: no-repeat;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #4B4C5F;
+    cursor: pointer;
+}
+
+h3:hover  {
+    color: #F47B56
+}
+
+p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.card {
+    width: 87%;
+    max-width: 920px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 48px 24px;
+    position: relative;
+    padding-top: 132px;
+    border-radius: 23px;
+}
+
+.accordion {
+    margin-bottom: 12px;
+}
+
+.hidden p {
+    height: 0;
+    opacity: 0;
+}
+
+.show p {
+    height: fit-content;
+    opacity: 1;
+}
+
+.show h3 {
+    color: #4B4C5F;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show .header img {
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+
+.illustration-mobile, .background-mobile {
+    max-width: 237px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.illustration-desktop, .background-desktop, .illustration-box-desktop {
+    display: none;
+}
+
+.background-mobile {
+    top: 0px;
+}
+
+.illustration-mobile {
+    top: -108px;
+}
+
+@media screen and (min-width: 970px) {
+    .illustration-mobile, .background-mobile {
+        display: none;
+    }
+
+    .illustration-desktop, .background-desktop, .illustration-box-desktop {
+        display: block;
+    }
+
+    .illustration-desktop {
+        max-width: 472px;
+        width: 100%;
+        position: absolute;
+        left: -87px;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+    }
+
+    .illustration-box-desktop {
+        position: absolute;
+        left: 150px;
+        top: 320px;
+        z-index: 3;
+    }
+
+    .accordion-container {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .background-desktop {
+        position: absolute;
+        left: -557px;
+        top: -300px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: flex-end;
+        padding: 65px 95px;
+        overflow: hidden;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 43px;
+    }
+
+    body {
+        margin-top: 0;
+    }
+}

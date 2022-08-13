@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img class="illustration-box-desktop" src="images/illustration-box-desktop.svg" alt="Illustration Box Desktop">
+  <section class="card" role="main">
+    <div class="illustration-container">
+      <img class="illustration-mobile" src="images/illustration-woman-online-mobile.svg" alt="Illustration Mobile">
+      <img class="background-mobile" src="images/bg-pattern-mobile.svg" alt="Background Mobile">
+      <img class="illustration-desktop" src="images/illustration-woman-online-desktop.svg" alt="Illustration Desktop">
+      <img class="background-desktop" src="images/bg-pattern-desktop.svg" alt="Background Desktop">
+    </div>
+    <div class="accordion-container">
+      <h1 class="bold">FAQ</h1>
+      <div class="accordion hidden">
+        <div class="header">
+          <h3>How many team members can I invite?</h3>
+          <img src="images/icon-arrow-down.svg" alt="Caret Down">
+        </div>
+        <p>
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </p>
+      </div>
+      <hr>
+
+      <div class="accordion hidden">
+        <div class="header">
+          <h3>What is the maximum file upload size?</h3>
+          <img src="images/icon-arrow-down.svg" alt="Caret Down">
+        </div>
+        <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </div>
+      <hr>
+
+      <div class="accordion hidden">
+        <div class="header">
+          <h3>How do I reset my password?</h3>
+          <img src="images/icon-arrow-down.svg" alt="Caret Down">
+        </div>
+        <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </div>
+      <hr>
+
+      <div class="accordion hidden">
+        <div class="header">
+          <h3>Can I cancel my subscription?</h3>
+          <img src="images/icon-arrow-down.svg" alt="Caret Down">
+        </div>
+        <p>Yes! Send us a message and we'll process your request no questions asked.</p>
+      </div>
+      <hr>
+
+      <div class="accordion show">
+        <div class="header">
+          <h3>Do you provide additional support?</h3>
+          <img src="images/icon-arrow-down.svg" alt="Caret Down">
+        </div>
+        <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+</body>
+
+</html>
