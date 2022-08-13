@@ -7,7 +7,7 @@ html, body {
     min-height: 100vh;
 }
 
-body, h1, h3, p {
+body, h1, h2, p {
     margin: 0;
 }
 
@@ -32,7 +32,7 @@ h1 {
     margin-bottom: 38px;
 }
 
-h3 {
+h2 {
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;
@@ -40,7 +40,7 @@ h3 {
     cursor: pointer;
 }
 
-h3:hover  {
+h2:hover  {
     color: #F47B56
 }
 
@@ -79,7 +79,7 @@ p {
     opacity: 1;
 }
 
-.show h3 {
+.show h2 {
     color: #4B4C5F;
     margin-bottom: 12px;
     font-weight: 700;
